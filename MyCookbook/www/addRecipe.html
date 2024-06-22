@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/addRecipe.css">
+    <title>My Cookbook</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">My Cookbook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <h3 class="text-center mt-3">Add Recipe</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" id="inputTitle" class="form-control" placeholder="Title">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="inputDescription" class="form-control" placeholder="Description">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Picture</label>
+                                <input type="file" id="inputPicture" class="form-control-file">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="inputIngredients" rows="3" placeholder="Ingredients"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="inputInstructions" rows="3" placeholder="Instructions"></textarea>                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="reset" class="btn">Clear</button>
+                                <button type="button" class="btn btn-primary" id="btnSubmit">Save</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="js/addRecipe.js"></script>
+    
+</body>
+</html>
